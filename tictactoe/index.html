@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Rock Paper Scissors</title>
+
+  <link href="./styles.css" rel="stylesheet" />
+
+  <script src="./scripts.js"></script>
+</head>
+<body>
+  <main class="game">
+    <header class="game-header">
+      <h2>Rock-Paper-Sissors</h2>
+      <label>
+        <input class="game-mode" type="checkbox" />
+        Play with CPU
+      </label>
+    </header>
+    <article class="game-board">
+      <section class="player-area player-area--player-1">
+        <h3 class="player-name">Player 1</h3>
+        <button data-player="1" class="player-area__selection"></button>
+      </section>
+      
+      <div class="vs-text">
+        <p>vs</p>
+      </div>
+      
+      <section class="player-area player-area--player-2">
+        <h3 class="player-name">Player 2 <span class="cpu-label hidden">(CPU)</span></h3>
+        <button data-player="2" class="player-area__selection"></button>
+      </section>
+
+      <section class="game-footer">
+        <button class="submit">Shoot <span class="cpu-label hidden">Against the Machine</span></button>
+        <p class="results"></p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
